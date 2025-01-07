@@ -2,6 +2,8 @@ package FlyweightDesignPattern;
 
 public class HumanoidRobot implements IRobot {
 
+    // this is the main part of flyweight object, to keep the shared object for shared data among all the objects. 
+
     private String type;
     private Sprites body;
 

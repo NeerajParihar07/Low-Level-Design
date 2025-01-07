@@ -6,6 +6,8 @@ import java.util.Map;
 public class RoboticFactory {
     private static Map<String, IRobot> roboticCache = new HashMap<>();
 
+    // important part of flyweight design pattern to keep it memory efficient using cache, for a particular type of object.
+
     public static IRobot createRobot(String robotType){
         if(roboticCache.containsKey(robotType))return roboticCache.get(robotType);  
         else{
